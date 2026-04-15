@@ -6,11 +6,12 @@
     procesados = []
 
     for nombre in lista_nombres:
-        # TODO: Implementar la lógica de limpieza y formato
         # 1. Eliminar espacios en blanco al inicio y final
-        # 2. Poner la primera letra en mayúscula
-        # 3. Solo agregar a la lista si el nombre no está vacío
-        pass
+        limpio = nombre.strip()
+
+        # 2. Poner la primera letra en mayúscula y el resto en minúscula
+        if limpio:  # 3. Solo agregar si no está vacío
+            procesados.append(limpio.capitalize())
 
     return procesados
 
